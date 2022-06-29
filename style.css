@@ -49,6 +49,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 90vh;
+    
 }
 
 .col-6 h3 {
@@ -75,9 +76,20 @@ img {
     top: 250px;
 };
 
+#futures {
+   display: grid;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.fe-box {
+    margin-left: 60px;
+}
+
+
    /* shop page*/
 
-#page-header {
-  background-image: url(./img/scarllet.jpg);
+#main {
   
 }
+
