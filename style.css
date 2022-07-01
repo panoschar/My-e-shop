@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -49,16 +48,15 @@ img {
     width: 100%;
     height: 90vh;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: 
-    " bags bags bags bags bags bags "
-    " bags bags bags bags bags bags"
-    " bags bags bags bags bags bags "
-    "features features features features features features"
-    "carousel carousel carousel carousel carousel carousel"
-    "carousel carousel carousel carousel carousel carousel"
-    "carousel carousel carousel carousel carousel carousel"
-    "something something something something something something";
+    grid-template-areas:
+        " bags bags bags bags bags bags"
+        " bags bags bags bags bags bags"
+        " bags bags bags bags bags bags"
+        "features features features features features features"
+        "carousel carousel carousel carousel carousel carousel"
+        "carousel carousel carousel carousel carousel carousel"
+        "carousel carousel carousel carousel carousel carousel"
+        "something something something something something something";
 }
 
 #bags {
@@ -74,16 +72,41 @@ img {
 
 #bag {
     background-color: rgb(145, 73, 73);
-} 
-
-#features {
-    background-color: black;
-    grid-area: features;
 }
 
-#carousel {
-    background-color: rgb(186, 36, 36);
+#features {
+    grid-area: features;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#features .box {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    box-shadow: 10px 20px 30px rgb(221, 221, 221);
+    margin: 15px 25px;
+}
+
+#features .box h4 {
+    font-size: 20px;
+    position: relative;
+}
+
+#features .box:hover {
+   background-color: rgb(243, 246, 255);
+   cursor: pointer;
+}
+
+#carusel {
+    background-color: rgb(212, 55, 55);
     grid-area: carousel;
+    height: 80vh;
 }
 
 #something {
@@ -91,13 +114,6 @@ img {
     grid-area: something;
 }
 
+/* shop page*/
 
-
-
-
-   /* shop page*/
-
-#main {
-  
-}
-
+#main {}
