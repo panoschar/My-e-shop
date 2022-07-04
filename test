@@ -104,3 +104,114 @@
 }
 
 .product-info  
+
+
+
+card without css
+<div class="card">
+    <img src="./img/bag2.jpg" alt="">
+    <div class="des">
+      
+    </div>
+</div>
+
+carousel buttons
+<button class="pre-btn"><i class="fa-solid fa-angles-left"></i></button>
+<button class="next-btn"><i class="fa-solid fa-angles-right"></i></button>
+
+
+
+shop
+<section id="pro-container">
+    
+    <div class="pro">
+        <img src="./img/bag2.jpg" alt="">
+        <div class="des">
+            <span>nike</span>
+            <h5>hello paragraph</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>50 $</h4>
+            <div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pro">
+        <img src="./img/bag2.jpg" alt="">
+        <div class="des">
+            <span>nike</span>
+            <h5>hello paragraph</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>50 $</h4>
+            <div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pro">
+        <img src="./img/bag2.jpg" alt="">
+        <div class="des">
+            <span>nike</span>
+            <h5>hello paragraph</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>50 $</h4>
+            <div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pro">
+        <img src="./img/bag2.jpg" alt="">
+        <div class="des">
+            <span>nike</span>
+            <h5>hello paragraph</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>50 $</h4>
+            <div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pro">
+        <img src="./img/bag2.jpg" alt="">
+        <div class="des">
+            <span>nike</span>
+            <h5>hello paragraph</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>50 $</h4>
+            <div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

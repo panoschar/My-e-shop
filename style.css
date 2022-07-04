@@ -57,7 +57,7 @@ img {
     width: 50%;
     position: relative;
     top: 5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .text h1 {
@@ -69,16 +69,12 @@ img {
     font-size: larger;
 }
 
-.button {
-   
-}
-
 .bag img {
-  position: relative;
-  width: 250px;
-  top: 10rem;
-  left: 7rem;
-  
+    position: relative;
+    width: 250px;
+    top: 10rem;
+    left: 7rem;
+
 }
 
 #features {
@@ -108,24 +104,18 @@ img {
 }
 
 #features .box h4 {
-   position: relative;
-   font-size: 20px;
-   padding: 10px 10px;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 10px;
 }
 
 #features .box:hover {
     background-color: rgb(243, 246, 255);
     cursor: pointer;
 }
-  /* slider style*/
 
-#product {
-    padding: 30px;
-}
+/* slider style*/
 
-#product h2 {
-    text-align: center;
-}
 
 #something {
     background-color: rgb(78, 37, 192);
@@ -138,4 +128,29 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
+}
+
+#product-1 {
+    text-align:end;
+    padding: 40px 80px;
+}
+
+#product-1 .product-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#product-1 .product {
+    width: 20%;
+    min-width: 200px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#product-1 .pro img {
+    width: 100%;
+
 }
