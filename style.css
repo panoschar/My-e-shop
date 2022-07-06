@@ -109,15 +109,19 @@ a {
     color: black;
     letter-spacing: 1px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-transform: uppercase;
-    font-size: 60px;
-    padding: 15px 300px;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 40px;
+    padding: 15px 200px;
     box-sizing: border-box;
     text-align: center;
+    column-gap: 80px;
 }
 
-#footer h3:hover,
+#footer h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
 #footer p:hover {
     color: lightslategray;
     cursor: pointer;
@@ -126,6 +130,17 @@ a {
 .web-footer {
     padding-top: 40 px;
     font-size: 12px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background: #cacaca;
+    margin-top: 1px;
+    padding: 20px;
+}
+
+.footer-bottom .copyright {
+    margin-top: 10px;
 }
 
 #credit {
