@@ -8,6 +8,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/01e3bb00f7.js" crossorigin="anonymous"></script>
 </head>
@@ -27,54 +30,126 @@
     </header>
 
 
-    <footer>
-        <section>
-            <div id="footer">
-                <div class="web-footer">
-                    <h3> PARTNERS </h3>
-                    <p> Zark </p>
-                    <p> Levis </p>
-                    <p> Agora </p>
-                    <p> FreeCasual </p>
-                    <p> + many more </p>
-                </div>
-                <div class="web-footer">
-                    <h3> HELPFUL LINKS </h3>
-                    <p> Home </p>
-                    <p> Shop </p>
-                    <p> About </p>
-                    <p> Contact </p>
-                </div>
-                <div class="web-footer">
-                    <h3> SERVICES </h3>
-                    <p> Prices drop </p>
-                    <p> New products </p>
-                    <p> Best sales </p>
-                    <p> Contuct us</p>
-                </div>
-                <div class="web-footer">
-                    <h3> LOCATION </h3>
-                    <p> Papastratou 101 </p>
-                    <p> Agrinio </p>
-                    <p> Greece</p>
+    
+   
+        <div class="slider owl-carousel">
+            <div class="product-grid__product-wrapper">
+                <div class="product-grid__product">
+                    <div class="product-grid__img-wrapper">
+                        <img src="./img/bags/bag1.jpg" alt="Img" class="product-grid__img" />
+                    </div>
+                    <span class="product-grid__title">Product title</span>
+                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Perferendis velit itaque odit.</p>
+                    <span class="product-grid__price">1.399€</span>
+                    <div class="product-grid__extend">
+                        <span class="product-grid__btn product-grid__add-to-cart"><i
+                                class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View
+                            more</span>
+                    </div>
                 </div>
             </div>
-            <div id="credit"><a href="https://linkedin.com/in/priyanka-sharma-b79401142"> © Instagram</a>
-                &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.edyoda.com/" target="_blank"> Facebook </a></div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <img src="./img/payments.png" alt="payment method" class="payment-img">
-                    <p class="copyright">
-                        Copyright &copy; <a href="#">Anon</a> all rights reserved.
-                    </p>
+            
+            <div class="card">
+                <div class="img">
+                    <img src="#" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Pricilla Preez</div>
+                    <div class="sub-title">
+                        Web Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
                 </div>
             </div>
-        </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            <div class="card">
+                <div class="img">
+                    <img src="#" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Eliana Maia</div>
+                    <div class="sub-title">
+                        App Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <footer>
+            <section>
+                <div id="footer">
+                    <div class="web-footer">
+                        <h3> PARTNERS </h3>
+                        <p> Zark </p>
+                        <p> Levis </p>
+                        <p> Agora </p>
+                        <p> FreeCasual </p>
+                        <p> + many more </p>
+                    </div>
+                    <div class="web-footer">
+                        <h3> HELPFUL LINKS </h3>
+                        <p> Home </p>
+                        <p> Shop </p>
+                        <p> About </p>
+                        <p> Contact </p>
+                    </div>
+                    <div class="web-footer">
+                        <h3> SERVICES </h3>
+                        <p> Prices drop </p>
+                        <p> New products </p>
+                        <p> Best sales </p>
+                        <p> Contuct us</p>
+                    </div>
+                    <div class="web-footer">
+                        <h3> LOCATION </h3>
+                        <p> Papastratou 101 </p>
+                        <p> Agrinio </p>
+                        <p> Greece</p>
+                    </div>
+                </div>
+                <div id="credit"><a href="https://linkedin.com/in/priyanka-sharma-b79401142"> © Instagram</a>
+                    &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.edyoda.com/" target="_blank"> Facebook </a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <img src="./img/payments.png" alt="payment method" class="payment-img">
+                        <p class="copyright">
+                            Copyright &copy; <a href="#">Anon</a> all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
         <script src="./index.js"></script>
-</body>
+        
+        <script>
+            $(".slider").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, //2000ms = 2s;
+                autoplayHoverPause: true,
+            });
+        </script>
+
+    </body>
 
 </html>

@@ -1,7 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 img {
     width: 150px;
@@ -42,14 +46,7 @@ img {
     font-size: 30px;
 }
 
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
 
-a {
-    text-decoration: none;
-}
 
 .cta {
     position: relative;
@@ -183,7 +180,7 @@ a {
 /* home page */
 
 #bags {
-    background-color: rgb(243, 246, 255);
+    background: rgb(219, 226, 247);
     display: flex;
     flex-wrap: wrap;
     height: 90vh;
@@ -251,6 +248,7 @@ a {
 
 /* Carousel style*/
 
+
 .carousel-inner {
     background-color: red;
     display: flex;
@@ -265,25 +263,21 @@ a {
     margin: 0 auto;
 }
 
-
-
 #something {
     background-color: rgb(78, 37, 192);
     grid-area: something;
 }
 
-    /* shop page*/
+/* shop page*/
 
 .wrapper {
     width: 68em;
     margin: 2em auto;
-    background: rgb(228, 234, 243);
+    background: rgb(219, 226, 247);
     padding: 3em;
     border-radius: 8px;
     border: 1px solid #f5f5f5;
 }
-
-
 
 .product-grid {
     width: 60em;
@@ -370,7 +364,7 @@ a {
 }
 
 .product-grid__extend {
-    display:flex;
+    display: flex;
     position: relative;
     padding: 0 1rem 1rem 1rem;
     margin: 0 auto;
@@ -414,3 +408,61 @@ a {
 .product-grid__view:hover {
     background: white;
 }
+
+
+/* About page*/
+
+.slider{
+    max-width: 1100px;
+    display: flex;
+  }
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+  }
+  .slider .card .img{
+    height: 200px;
+    width: 100%;
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .card .content p{
+    text-align: justify;
+    margin: 10px 0;
+  }
+  .card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .card .content .btn button{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .card .content .btn button:hover{
+    transform: scale(0.9);
+  }
