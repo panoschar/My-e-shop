@@ -251,7 +251,7 @@ img {
 }
 
 #features .box {
-  width: 185px;
+  width: 150px;
   border: 1px solid rgb(158, 158, 158);
   border-radius: 8px;
   text-align: center;
@@ -271,7 +271,7 @@ img {
 
 #features .box h4 {
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 10px;
 }
 
