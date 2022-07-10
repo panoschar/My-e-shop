@@ -15,16 +15,27 @@
 <body>
     <header id="header">
         <a href="#"><img src="./img/logo6.webp" class="logo" alt="This is a logo"></a>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <div class="icons">
+                    <li><a href=""><i id="favourites" class="fa-solid fa-heart"></i></a></li>
+                    <li><a href=""><i id="cart" class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>
+
             </ul>
         </div>
     </header>
+
 
     <section id="home">
         <div class="text">
@@ -33,7 +44,7 @@
             <h1>A gift just for you</h1>
             <p>Save more with coupons & discounts up to 50% <span>off!</span></p>
             <a href="#" class="cta">
-                <span>Click me</span>
+                <span>Shop now</span>
                 <svg width="13px" height="10px">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -71,29 +82,7 @@
     <h2 class="product-category">Best Selling</h2>
     <section id="best-seller">
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-               
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-        </div>
+
 
     </section>
 
@@ -130,8 +119,10 @@
                     <p> Greece</p>
                 </div>
             </div>
-            <div id="credit"><a href="https://linkedin.com/in/priyanka-sharma-b79401142"> © Instagram</a>
-                &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.edyoda.com/" target="_blank"> Facebook </a></div>
+            <div id="credit"><a href="https://linkedin.com/in/priyanka-sharma-b79401142"> <i
+                        class="fa-brands fa-instagram"></i> Instagram </a>
+                &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.edyoda.com/" target="_blank"> Facebook <i
+                        class="fa-brands fa-facebook-f"></i></a></div>
             <div class="footer-bottom">
                 <div class="container">
                     <img src="./img/payments.png" alt="payment method" class="payment-img">
@@ -146,7 +137,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

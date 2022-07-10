@@ -9,6 +9,7 @@
 img {
   width: 200px;
   margin-left: 20px;
+  
 }
 
 #header {
@@ -16,9 +17,25 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background: #cacaca;
+  background: #bebebe;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
+
+#header .social {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 70px;
+  margin-right: 300px;
+}
+
+#header .social i {
+   color: rgb(255, 255, 255);
+   padding-top: 27px;
+  
+}
+
+
 
 #navbar {
   display: flex;
@@ -41,6 +58,14 @@ img {
   transition: 1.5 ease;
 }
 
+#navbar .icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
 #navbar li a:hover,
 #navbar li a.active {
   font-size: 20px;
@@ -48,75 +73,21 @@ img {
   color: rgb(28, 124, 33);
 }
 
-.cta {
-  position: relative;
-  margin: auto;
-  padding: 19px 22px;
-  transition: all 0.8s ease;
-}
-
-.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 28px;
-  background: rgba(139, 91, 67, 0.5);
-  width: 56px;
-  height: 56px;
-  transition: all 0.5s ease;
-}
-
-.cta span {
-  position: relative;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 300;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: rgb(15, 12, 12);
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-
-.cta:hover:before {
-  width: 100%;
-  background: #fa9788;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-}
-
-.cta:active {
-  transform: scale(0.96);
-}
-
 #footer {
   width: 100%;
-  background: #cacaca;
+  background: #bebebe;
   color: black;
   letter-spacing: 1px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-size: 40px;
-  padding: 15px 200px;
+  padding: 50px 200px;
   box-sizing: border-box;
   text-align: center;
   column-gap: 80px;
 }
+
+
 
 #footer h3 {
   font-size: 20px;
@@ -135,7 +106,7 @@ img {
 
 .footer-bottom {
   text-align: center;
-  background: #cacaca;
+  background: #bebebe;
   margin-top: 1px;
   padding: 20px;
 }
@@ -149,7 +120,7 @@ img {
   margin: auto;
   padding: 20px 0;
   text-align: center;
-  background: #cacaca;
+  background: #bebebe;
   color: rgb(0, 0, 0);
   font-size: 11px;
   letter-spacing: 1px;
@@ -205,6 +176,65 @@ img {
   font-size: larger;
 }
 
+  /* button */
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.8s ease;
+  text-decoration: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: #111111;
+  width: 56px;
+  height: 56px;
+  transition: all 0.2s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;  
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(26, 23, 23);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #c0c0c0;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.96);
+}
+
 .bag img {
   position: relative;
   width: 300px;
@@ -222,7 +252,7 @@ img {
 
 #features .box {
   width: 185px;
-  border: 1px solid black;
+  border: 1px solid rgb(158, 158, 158);
   border-radius: 8px;
   text-align: center;
   padding-top: 10px;
@@ -275,9 +305,9 @@ img {
 
 .wrapper {
   width: 68em;
-  margin: 2em auto;
+  margin: 4em auto;
   background: rgb(219, 226, 247);
-  padding: 3em;
+  padding: 2em 2em;
   border-radius: 8px;
   border: 1px solid #f5f5f5;
 }
@@ -322,6 +352,7 @@ img {
 .product-grid__product:hover {
   box-shadow: 0px 0px 0px 1px #eee;
   z-index: 50;
+  transform: scale(1.0, 1.0) rotate(1deg);
 }
 
 .product-grid__img-wrapper {
@@ -360,7 +391,7 @@ img {
 }
 
 .product-grid__price {
-  color: #e91e63;
+  color: #137520;
   font-weight: bold;
   position: relative;
   letter-spacing: 0.4px;
@@ -374,14 +405,14 @@ img {
 }
 
 .product-grid__description {
-  font-size: 0.5em;
+  font-size: 12px;
   margin-bottom: 15px;
 }
 
 .product-grid__btn {
   display: inline-block;
   font-size: 0.775em;
-  color: #777;
+  color: rgb(107, 106, 106);
   background: #eee;
   padding: 0.5em 0.625em;
   margin-top: 0.875rem;
@@ -395,12 +426,12 @@ img {
 }
 
 .product-grid__add-to-cart {
-  color: #fff;
-  background: #e91e63;
+  color: white;
+  background: rgb(40, 80, 40);
 }
 
 .product-grid__add-to-cart:hover {
-  background: #ee4c83;
+  background-color: #547759;
 }
 
 .product-grid__view {
@@ -410,8 +441,8 @@ img {
 
 .product-grid__view:hover {
   background: white;
+ 
 }
 
 /* About page*/
-
 
