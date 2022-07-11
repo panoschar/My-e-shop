@@ -32,10 +32,12 @@ img {
 #header .social i {
    color: rgb(255, 255, 255);
    padding-top: 27px;
-  
+   font-size: 20px;
 }
 
-
+#header .social i:hover {
+  transform: scale(1.2);
+}
 
 #navbar {
   display: flex;
@@ -63,9 +65,6 @@ img {
   flex-wrap: wrap;
 }
 
-
-
-
 #navbar li a:hover,
 #navbar li a.active {
   font-size: 20px;
@@ -86,8 +85,6 @@ img {
   text-align: center;
   column-gap: 80px;
 }
-
-
 
 #footer h3 {
   font-size: 20px;
@@ -352,7 +349,8 @@ img {
 .product-grid__product:hover {
   box-shadow: 0px 0px 0px 1px #eee;
   z-index: 50;
-  transform: scale(1.0, 1.0) rotate(1deg);
+  
+  transform: scale(1.1);
 }
 
 .product-grid__img-wrapper {
@@ -432,6 +430,7 @@ img {
 
 .product-grid__add-to-cart:hover {
   background-color: #547759;
+  
 }
 
 .product-grid__view {
@@ -441,7 +440,7 @@ img {
 
 .product-grid__view:hover {
   background: white;
- 
+  
 }
 
 /* About page*/
@@ -449,7 +448,10 @@ img {
 
 .container-fluid {
   display: flex;
-  
+  background-image: url(./img/image1.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100%
 }
 
 .container-fluid img {
@@ -460,4 +462,27 @@ img {
 
 .container-fluid .content {
   margin: 30px 30px;
+  top:200px
+}
+
+.innovation {
+  position: relative;
+  width: 400px;
+  top: 30px;
+}
+
+.heritage {
+  position: relative;
+  bottom: 90px;
+  left: 400px;
+  width: 400px;
+}
+
+.crafts {
+  position: relative;
+  bottom: 70px;
+}
+
+.store h5 {
+  margin: 10px 30px;
 }
