@@ -100,13 +100,13 @@ img {
 
 .footer ul {
   list-style: none;
-  position: relative;
+  text-align: start;
+  padding-left: 2px;
 }
 
 .footer li a {
   color: rgb(58, 58, 58);
-  position: relative;
-  text-align: center ;
+  font-size: 15px;
 }
 
 .footer li:hover {
@@ -131,6 +131,7 @@ img {
   width: 100%;
   margin: auto;
   padding: 10px 0;
+  margin-left: 12px;
   text-align: center;
   background: #bebebe;
   color: rgb(0, 0, 0);
