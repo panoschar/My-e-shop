@@ -307,12 +307,12 @@ img {
 /* Best selling section */
 
 #best-seller {
-  background-color: rgb(206, 217, 252)
+  
 }
 
 #best-seller h3 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #best-seller .products {
@@ -323,6 +323,7 @@ img {
 #best-seller .products .card {
   width: 250px;
   margin: 0 auto;
+  box-shadow: 10px 20px 30px rgb(221, 221, 221);
   transition: all .8s ease-in-out;
 }
 
