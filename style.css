@@ -64,6 +64,15 @@ img {
   color: rgb(28, 124, 33);
 }
 
+.cart-amount {
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+  
+  border-radius: 5px;
+  color: rgb(15, 14, 14);
+}
+
 .footer {
   background-color: #bebebe;
   padding: 70px 0;
@@ -337,7 +346,7 @@ img {
 /* shop page*/
 
 .wrapper {
-  width: 68em;
+  width: 70em;
   margin: 4em auto;
   background: rgb(219, 226, 247);
   padding: 2em 2em;
@@ -372,6 +381,12 @@ h2 {
 .product-grid.product-grid--flexbox .product-grid__wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.product-grid .card {
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
 }
 
 .product-grid.product-grid--flexbox .product-grid__title {
