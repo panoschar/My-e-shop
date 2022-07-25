@@ -581,15 +581,8 @@ h2 {
 
 /* Contact page */
 
-/* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+
 
 .contact-container {
   width: 85%;
@@ -751,3 +744,52 @@ h2 {
     margin-left: 0;
   }
 }
+
+
+/*  Cart page */
+
+.cart-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.08);
+  z-index: 99999;
+  transition: 0.3s linear;
+  transform: scale(0);
+}
+
+.cart-box .active {
+  transform: scale(1) ;
+}
+
+.cart-box .cart1 {
+  position: relative;
+  height: 50%;
+  width: 70%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.cart-box .cart1 i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #137520;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.cart-box .cart1 h1 {
+  position: relative;
+  margin-top: 2%;
+  font-size: 2rem;
+}
+
