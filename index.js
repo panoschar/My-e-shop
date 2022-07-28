@@ -18,6 +18,8 @@ const addToCartButton = document.getElementsByClassName('product-grid__btn produ
 let items = [];
 for (let i = 0; i < addToCartButton.length; i++) {
     addToCartButton[i].addEventListener('click', function (e) {
+        console.log(e.target.parentElement.children[1].textContent);
+        console.log(e.target.parentElement.children[2].children[0].textContent);
         if (typeof window !== 'undefined') {
             let item = {
                 id: i + 1,
