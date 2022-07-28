@@ -10,41 +10,70 @@ window.onload = function () {
     cartCloseButton.addEventListener("click", function () {
         cartBox.classList.remove('active')
     });
-};
 
     // add data to local storage
 
-const addToCartButton = document.getElementsByClassName('product-grid__btn product-grid__add-to-cart');
-let items = [];
-for (let i = 0; i < addToCartButton.length; i++) {
-    addToCartButton[i].addEventListener('click', function (e) {
-        console.log(e.target.parentElement.children[1].textContent);
-        console.log(e.target.parentElement.children[2].children[0].textContent);
-        if (typeof window !== 'undefined') {
-            let item = {
-                id: i + 1,
-                name: e.target.parentElement.children[1].textContent,
-                price: e.target.parentElement.children[2].children[0].textContent,
-                no:1
-            };
-            if(JSON.parse(localStorage.getItem('items')) === null) {
-                items.push(item);
-                localStorage.setItem("items",JSON.stringify(items));
-            }else {
-                const localItems = JSON.parse(localStorage.getItem("items"));
-                localItems.map(data => {
-                   if(item.id == data.id) {
-                    item.no += 1;
-                   }else {
-                    items.push(data);
-                   }
-                });
-                items.push(item);
-                localStorage.setItem('items',JSON.stringify(items));
+    const addToCartButton = document.getElementsByClassName('product-grid__btn product-grid__add-to-cart');
+    let items = [];
+    for (let i = 0; i < addToCartButton.length; i++) {
+        addToCartButton[i].addEventListener('click', function (e) {
+            console.log(e.target.parentElement.children[1].textContent);
+            console.log(e.target.parentElement.children[2].children[0].textContent);
+            if (typeof window !== 'undefined') {
+                let item = {
+                    id: i + 1,
+                    name: e.target.parentElement.children[1].textContent,
+                    price: e.target.parentElement.children[2].children[0].textContent,
+                    no: 1
+                };
+                if (JSON.parse(localStorage.getItem('items')) === null) {
+                    items.push(item);
+                    localStorage.setItem("items", JSON.stringify(items));
+                    window.location.reload();
+                } else {
+                    const localItems = JSON.parse(localStorage.getItem("items"));
+                    localItems.map(data => {
+                        if (item.id == data.id) {
+                            item.no = data.no + 1;
+                        } else {
+                            items.push(data);
+                        }
+                    });
+                    items.push(item);
+                    localStorage.setItem('items', JSON.stringify(items));
+                    window.location.reload();
+                }
+            } else {
+                alert('not working');
             }
-} else {
-    alert('not working');
-}
+        });
+    }
+
+    // adding data to shopping cart
+    const iconShoppingP = document.querySelector('.iconShopping spam');
+    let no = 0;
+    JSON.parse(localStorage.getItem('items')).map(data => {
+        no = no + data.no;
     });
-}
+    iconShoppingP.innerHTML = no;
+
+    const cartBoxTable = cartBox.querySelector('table');
+    let tableData = '';
+    tableData += '<tr><th> Code no. <th><th> Item name </th><th> Item no </th><th> Item price </th><th></th></tr>';
+    if(JSON.parse(localStorage.getItem('items')) === null) {
+        tableData += '<tr><td> No items found </td></tr>'
+    }else {
+        JSON.parse(localStorage.getItem('items')).map(data => {
+            
+        })
+    }
+    cartBoxTable.innerHTML = tableData;
+
+};
+
+
+
+
+
+
 
