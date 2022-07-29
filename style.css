@@ -177,7 +177,6 @@ img {
   margin-top: 10px;
 }
 
-
 /* home page */
 
 #home {
@@ -193,7 +192,6 @@ img {
   top: 5rem;
   font-family: "Times New Roman", Times, serif;
 }
-
 
 .text h1 {
   color: rgb(28, 124, 33);
@@ -308,10 +306,11 @@ img {
   cursor: pointer;
 }
 
+
+
 /* Best selling section */
 
 #best-seller {
-  
 }
 
 #best-seller h3 {
@@ -328,15 +327,16 @@ img {
   width: 250px;
   margin: 0 auto;
   box-shadow: 10px 20px 30px rgb(221, 221, 221);
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 #best-seller .products .card:hover {
   transform: scale(0.9);
 }
 
-         
-       /* shop page*/
+
+
+/* shop page*/
 
 .wrapper {
   width: 70em;
@@ -371,7 +371,6 @@ h2 {
   margin: 1px auto;
 }
 
-
 .product-grid.product-grid--flexbox .product-grid__title {
   height: 40px;
 }
@@ -397,7 +396,7 @@ h2 {
   cursor: pointer;
   background: #fff;
   border-radius: 4px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .product-grid__product:hover {
@@ -444,11 +443,9 @@ h2 {
 .product-grid__price {
   color: #137520;
   font-weight: bold;
-  position: relative ;
+  position: relative;
   letter-spacing: 0.4px;
 }
-
-
 
 .product-grid__btn {
   display: inline-block;
@@ -456,10 +453,9 @@ h2 {
   color: rgb(107, 106, 106);
   background: #eee;
   padding: 0.5em 0.625em;
- 
+
   cursor: pointer;
   border-radius: 4px;
-  
 }
 
 .product-grid__btn i.fa {
@@ -486,7 +482,6 @@ h2 {
   background: white;
 }
 
-
 .page-btn {
   margin-top: 20px;
   margin-left: 30px;
@@ -508,6 +503,7 @@ h2 {
   background: rgb(68, 114, 68);
   color: white;
 }
+
 
 
 /* About page*/
@@ -557,9 +553,6 @@ h2 {
 
 /* Contact page */
 
-
-
-
 .contact-container {
   width: 85%;
   background: #fff;
@@ -586,7 +579,7 @@ h2 {
 }
 
 .content .left-side::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 70%;
   width: 2px;
@@ -642,7 +635,7 @@ h2 {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -650,9 +643,8 @@ h2 {
 
 .right-side .message-box {
   min-height: 110px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
-
 }
 
 .right-side .input-box textarea {
@@ -679,7 +671,6 @@ h2 {
 .button input[type="button"]:hover {
   background: #408f4b;
 }
-
 
 @media (max-width: 950px) {
   .contact-container {
@@ -721,7 +712,6 @@ h2 {
   }
 }
 
-
 /*  Cart page */
 
 .cartBox {
@@ -740,7 +730,7 @@ h2 {
 }
 
 .cartBox.active {
-  transform: scale(1) ;
+  transform: scale(1);
 }
 
 .cartBox .cart {
@@ -790,4 +780,8 @@ tbody th {
 
 .table-content tbody tr {
   border-bottom: 1px solid #dddddd;
+}
+
+.table-content tbody tr:last-of-type {
+  border-bottom: 2px solid #31913e;
 }
