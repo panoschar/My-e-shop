@@ -757,7 +757,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #137520;
+  background-color: #31913e;
   padding: 10px 15px;
   cursor: pointer;
 }
@@ -768,3 +768,26 @@ h2 {
   font-size: 2rem;
 }
 
+.table-content {
+  display: flex;
+  flex-wrap: wrap;
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 600px;
+}
+
+.table-row {
+  background-color: #31913e;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+tbody th {
+  padding: 12px 30px;
+}
+
+.table-content tbody tr {
+  border-bottom: 1px solid #dddddd;
+}

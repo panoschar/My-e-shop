@@ -13,6 +13,18 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/01e3bb00f7.js" crossorigin="anonymous"></script>
+    <script>
+        function Delete(e) {
+            let items = [];
+            JSON.parse(localStorage.getItem('items')).map(data => {
+                if (data.id != e.parentElement.parentElement.children[0].textContent) {
+                    items.push(data);
+                }
+            });
+            localStorage.setItem('items', JSON.stringify(items));
+            window.location.reload();
+        };
+     </script>
 </head>
 
 <body>
@@ -188,7 +200,7 @@
         <div class="cart">
             <i class="fa fa-close"></i>
             <h1>Cart</h1>
-            <table></table>
+            <table class="table-content"></table>
         </div>
 
     </div>
@@ -251,6 +263,7 @@
     </footer>
 
     <script src="./index.js"></script>
+    
 </body>
 
 </html>

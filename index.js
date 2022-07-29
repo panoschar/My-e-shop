@@ -24,7 +24,7 @@ window.onload = function () {
                     id: i + 1,
                     name: e.target.parentElement.children[1].textContent,
                     price: e.target.parentElement.children[2].children[0].textContent,
-                    no: 1
+                    quantity: 1
                 };
                 if (JSON.parse(localStorage.getItem('items')) === null) {
                     items.push(item);
@@ -34,7 +34,7 @@ window.onload = function () {
                     const localItems = JSON.parse(localStorage.getItem("items"));
                     localItems.map(data => {
                         if (item.id == data.id) {
-                            item.no = data.no + 1;
+                            item.quantity = data.quantity + 1;
                         } else {
                             items.push(data);
                         }
@@ -51,25 +51,28 @@ window.onload = function () {
 
     // adding data to shopping cart
     const iconShoppingP = document.querySelector('.iconShopping spam');
-    let no = 0;
+    let quantity = 0;
     JSON.parse(localStorage.getItem('items')).map(data => {
-        no = no + data.no;
+        quantity = quantity + data.quantity;
     });
-    iconShoppingP.innerHTML = no;
+    iconShoppingP.innerHTML = quantity;
 
     const cartBoxTable = cartBox.querySelector('table');
     let tableData = '';
-    tableData += '<tr><th> Code no. <th><th> Item name </th><th> Item no </th><th> Item price </th><th></th></tr>';
-    if(JSON.parse(localStorage.getItem('items')) === null) {
+    tableData += '<tr class="table-row"><th class="product-id"> Code no. </th><th class="product-name"> Item name </th><th class="product-quantity"> Quantity </th><th> Item price </th><th></th></tr>';
+    if (JSON.parse(localStorage.getItem('items')) === null) {
         tableData += '<tr><td> No items found </td></tr>'
-    }else {
+    } else {
         JSON.parse(localStorage.getItem('items')).map(data => {
-            
-        })
+            tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th>' +
+                data.price + '</th><th><a class="button" href="#" onclick = Delete(this);> Delete </a></th></tr>';
+        });
+
     }
     cartBoxTable.innerHTML = tableData;
 
 };
+
 
 
 
