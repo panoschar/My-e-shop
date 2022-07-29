@@ -33,8 +33,9 @@ window.onload = function () {
                 } else {
                     const localItems = JSON.parse(localStorage.getItem("items"));
                     localItems.map(data => {
-                        if (item.id == data.id) {
+                        if (item.id == data.id && item.price == data.price) {
                             item.quantity = data.quantity + 1;
+                            //item.price = item.price + item.price;
                         } else {
                             items.push(data);
                         }
@@ -57,6 +58,8 @@ window.onload = function () {
     });
     iconShoppingP.innerHTML = quantity;
 
+
+
     const cartBoxTable = cartBox.querySelector('table');
     let tableData = '';
     tableData += '<tr class="table-row"><th class="product-id"> Code no. </th><th class="product-name"> Item name </th><th class="product-quantity"> Quantity </th><th> Item price </th><th></th></tr>';
@@ -65,9 +68,16 @@ window.onload = function () {
     } else {
         JSON.parse(localStorage.getItem('items')).map(data => {
             tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th>' +
-                data.price + '</th><th><a class="button" href="#" onclick = Delete(this);> Delete </a></th></tr>';
+                data.price + '</th><th><a class="cart-button" href="#" onclick = Delete(this);> Delete </a></th></tr>';
         });
-
+        // let removeItem = document.getElementsByClassName('cart-button');
+        // console.log(removeItem)
+        // for(let i = 0; i < removeItem.length; i++) {
+        //  let button = removeItem[i]
+        //  button.addEventListener('click', function() {
+        //      console.log('clicked')
+        //  });
+        // };
     }
     cartBoxTable.innerHTML = tableData;
 
