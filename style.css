@@ -177,6 +177,8 @@ img {
   margin-top: 10px;
 }
 
+
+
 /* home page */
 
 #home {
@@ -201,6 +203,8 @@ img {
   color: rgb(214, 14, 14);
   font-size: larger;
 }
+
+
 
 /* button */
 
@@ -747,7 +751,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #31913e;
+  background-color: #298d59;
   padding: 10px 15px;
   cursor: pointer;
 }
@@ -767,7 +771,7 @@ h2 {
 }
 
 .table-row {
-  background-color: #31913e;
+  background-color: #258855;
   color: #ffffff;
   text-align: left;
   font-weight: bold;
@@ -785,3 +789,5 @@ tbody th {
 .table-content tbody tr:last-of-type {
   border-bottom: 2px solid #31913e;
 }
+
+

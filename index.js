@@ -33,9 +33,9 @@ window.onload = function () {
                 } else {
                     const localItems = JSON.parse(localStorage.getItem("items"));
                     localItems.map(data => {
-                        if (item.id == data.id && item.price == data.price) {
+                        if (item.id == data.id) {
                             item.quantity = data.quantity + 1;
-                            //item.price = item.price + item.price;
+                            item.price = parseInt(data.price) + parseInt(item.price);
                         } else {
                             items.push(data);
                         }
@@ -57,8 +57,7 @@ window.onload = function () {
         quantity = quantity + data.quantity;
     });
     iconShoppingP.innerHTML = quantity;
-
-
+   
 
     const cartBoxTable = cartBox.querySelector('table');
     let tableData = '';
@@ -67,9 +66,11 @@ window.onload = function () {
         tableData += '<tr><td> No items found </td></tr>'
     } else {
         JSON.parse(localStorage.getItem('items')).map(data => {
-            tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th>' +
-                data.price + '</th><th><a class="cart-button" href="#" onclick = Delete(this);> Delete </a></th></tr>';
+            tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th class="price">' +
+                data.price + '</th><th><a class="remove" href="#" onclick = Delete(this);> Remove </a></th></tr>';
+                
         });
+        
         // let removeItem = document.getElementsByClassName('cart-button');
         // console.log(removeItem)
         // for(let i = 0; i < removeItem.length; i++) {
