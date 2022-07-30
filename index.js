@@ -67,7 +67,7 @@ window.onload = function () {
     } else {
         JSON.parse(localStorage.getItem('items')).map(data => {
             tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th class="price">' +
-                data.price + '</th><th><a class="remove" href="#" onclick = Delete(this);> Remove </a></th></tr>';
+                data.price + '</th><th><a class="button-55" href="#" onclick = Delete(this);> Remove </a></th></tr>';
                 
         });
         
