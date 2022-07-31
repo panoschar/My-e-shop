@@ -17,8 +17,6 @@ window.onload = function () {
     let items = [];
     for (let i = 0; i < addToCartButton.length; i++) {
         addToCartButton[i].addEventListener('click', function (e) {
-            console.log(e.target.parentElement.children[1].textContent);
-            console.log(e.target.parentElement.children[2].children[0].textContent);
             if (typeof window !== 'undefined') {
                 let item = {
                     id: i + 1,
@@ -26,6 +24,7 @@ window.onload = function () {
                     price: e.target.parentElement.children[2].children[0].textContent,
                     quantity: 1
                 };
+                
                 if (JSON.parse(localStorage.getItem('items')) === null) {
                     items.push(item);
                     localStorage.setItem("items", JSON.stringify(items));
@@ -36,6 +35,7 @@ window.onload = function () {
                         if (item.id == data.id) {
                             item.quantity = data.quantity + 1;
                             item.price = parseInt(data.price) + parseInt(item.price);
+                            
                         } else {
                             items.push(data);
                         }
@@ -43,10 +43,12 @@ window.onload = function () {
                     items.push(item);
                     localStorage.setItem('items', JSON.stringify(items));
                     window.location.reload();
+                    
                 }
             } else {
                 alert('not working');
             }
+            
         });
     }
 
@@ -57,7 +59,7 @@ window.onload = function () {
         quantity = quantity + data.quantity;
     });
     iconShoppingP.innerHTML = quantity;
-   
+
 
     const cartBoxTable = cartBox.querySelector('table');
     let tableData = '';
@@ -68,9 +70,15 @@ window.onload = function () {
         JSON.parse(localStorage.getItem('items')).map(data => {
             tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th class="price">' +
                 data.price + '</th><th><a class="button-55" href="#" onclick = Delete(this);> Remove </a></th></tr>';
-                
+            //     let total = 0;
+            //    let values = Object.values(data);
+            //    values.forEach(element => {
+            //     total = total + data.price;
+            //    })
+            //    console.log(total)
         });
-        
+
+
         // let removeItem = document.getElementsByClassName('cart-button');
         // console.log(removeItem)
         // for(let i = 0; i < removeItem.length; i++) {
