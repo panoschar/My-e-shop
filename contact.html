@@ -19,7 +19,6 @@
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a class="active" href="contact.html">Contact</a></li>
                 <div class="icons">
                     <li>
@@ -60,18 +59,24 @@
                 <div class="topic-text">Send us a message. . .</div>
                 <p>If you have any type of queries or issues related to our website, you can send us a message
                     from here. Your feedback is quite important for us!</p>
-                <form action="#">
+                <form action="#" onclick="event.preventDefault(); validateForm()">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your name. . .">
+                        
+                        <input id="name" type="text" placeholder="Enter your name. . .">
+                        <small class="error"></small>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your email. . .">
+                        
+                        <input id="email" type="text" placeholder="Enter your email. . .">
+                        <small class="error"></small>
                     </div>
                     <div class="input-box message-box">
-                        <input type="text" placeholder="Your message. . .">
+                       
+                        <input id="mesage" type="text" placeholder="Your message. . .">
+                        <small class="error"></small>
                     </div>
                     <div class="button">
-                        <input type="button" value="Send Now">
+                        <input type="button"  value="Send message">
                     </div>
                 </form>
             </div>
@@ -105,7 +110,6 @@
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Shop</a></li>
-                        <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>

@@ -1,3 +1,16 @@
+ // Validate form
+ const nameInput = document.querySelector("#name");
+ const emailInput = document.querySelector("#email");
+ const messageInput = document.querySelector("#message");
+ const success = document.querySelector("#success");
+ const errorNodes = document.querySelectorAll(".error");
+
+ function validateForm() {
+     isFinite(nameInput.a.length)
+ }
+
+
+
 window.onload = function () {
     const iconShopping = document.querySelector('.iconShopping');
     const cartCloseButton = document.querySelector('.fa-close')
@@ -24,7 +37,7 @@ window.onload = function () {
                     price: e.target.parentElement.children[2].children[0].textContent,
                     quantity: 1
                 };
-                
+
                 if (JSON.parse(localStorage.getItem('items')) === null) {
                     items.push(item);
                     localStorage.setItem("items", JSON.stringify(items));
@@ -35,7 +48,7 @@ window.onload = function () {
                         if (item.id == data.id) {
                             item.quantity = data.quantity + 1;
                             item.price = parseInt(data.price) + parseInt(item.price);
-                            
+
                         } else {
                             items.push(data);
                         }
@@ -43,12 +56,12 @@ window.onload = function () {
                     items.push(item);
                     localStorage.setItem('items', JSON.stringify(items));
                     window.location.reload();
-                    
+
                 }
             } else {
                 alert('not working');
             }
-            
+
         });
     }
 
@@ -91,11 +104,6 @@ window.onload = function () {
     cartBoxTable.innerHTML = tableData;
 
 };
-
-
-
-
-
 
 
 

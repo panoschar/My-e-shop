@@ -1,0 +1,71 @@
+<div class="card">
+                <div class="product-grid__product">
+                    <div class="product-grid__img-wrapper">
+                        <img src="./img/bags/bag1.jpg" alt="Img" class="product-grid__img" />
+                    </div>
+                    <span class="product-grid__title">302 / MTC Bubbles</span>
+                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Perferendis velit itaque odit.</p>
+                    <span class="product-grid__price">64€</span>
+                    <div class="product-grid__extend">
+                        <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i>
+                            Add to cart</span>
+                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View
+                            more</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-grid__product">
+                    <div class="product-grid__img-wrapper">
+                        <img src="./img/bags/bag12.jpg" alt="Img" class="product-grid__img" />
+                    </div>
+                    <span class="product-grid__title">204 / Knighted bag</span>
+                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Perferendis velit itaque odit.</p>
+                    <span class="product-grid__price">69€</span>
+                    <div class="product-grid__extend">
+                        <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i>
+                            Add to cart</span>
+                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View
+                            more</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-grid__product">
+                    <div class="product-grid__img-wrapper">
+                        <img src="./img/bags/bag5.jpg" alt="Img" class="product-grid__img" />
+                    </div>
+                    <span class="product-grid__title"> 202 / Clutch with bubbles</span>
+                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Perferendis velit itaque odit.</p>
+                    <span class="product-grid__price">77€</span>
+                    <div class="product-grid__extend">
+                        <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i>
+                            Add to cart</span>
+                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View
+                            more</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-grid__product">
+                    <div class="product-grid__img-wrapper">
+                        <img src="./img/bags/bag7.jpg" alt="Img" class="product-grid__img" />
+                    </div>
+                    <span class="product-grid__title">401 /Clutch with bubbles</span>
+                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Perferendis velit itaque odit.</p>
+                    <span class="product-grid__price">64€</span>
+                    <div class="product-grid__extend">
+                        <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i>
+                            Add to cart</span>
+                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View
+                            more</span>
+                    </div>
+                </div>
+            </div>
