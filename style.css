@@ -796,6 +796,13 @@ tbody th {
   font-size: 15px;
 }
 
+.table-content tbody span {
+  margin-left: 5px;
+  
+  font-size: 13px;
+  color: rgb(38, 114, 38)
+}
+
 .table-content tbody tr {
   border-bottom: 1px solid #dddddd;
 }

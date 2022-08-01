@@ -52,6 +52,7 @@ window.onload = function () {
     let items = [];
     for (let i = 0; i < addToCartButton.length; i++) {
         addToCartButton[i].addEventListener('click', function (e) {
+           
             if (typeof window !== 'undefined') {
                 let item = {
                     id: i + 1,
@@ -104,7 +105,7 @@ window.onload = function () {
     } else {
         JSON.parse(localStorage.getItem('items')).map(data => {
             tableData += '<tr><th>' + data.id + '</th><th>' + data.name + '</th><th>' + data.quantity + '</th><th class="price">' +
-                data.price + '</th><th><a class="button-55" href="#" onclick = Delete(this);> Remove </a></th></tr>';
+                data.price + "" + '<span>$</span>' + '</th><th><a class="button-55" href="#" onclick = Delete(this);> Remove </a></th></tr>';
             //     let total = 0;
             //    let values = Object.values(data);
             //    values.forEach(element => {
